@@ -1,0 +1,9 @@
+/build
+/public
+build
+LICENSE
+*.css
+*.json
+*.md
+*.svg
+.eslintrc.yml
