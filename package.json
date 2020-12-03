@@ -1,0 +1,22 @@
+{
+  "name": "react-clean-practice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Practice for React with Unstated-next x Clean Architecture x Monorepo",
+  "author": "danmaq",
+  "license": "MIT",
+  "homepage": "https://github.com/danmaq/react-clean-practice#readme",
+  "bugs": {
+    "url": "https://github.com/danmaq/react-clean-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danmaq/react-clean-practice.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}
