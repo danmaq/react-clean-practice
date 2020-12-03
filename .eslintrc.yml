@@ -1,0 +1,42 @@
+env:
+  es2020: true
+extends:
+  - eslint:recommended
+  - airbnb-typescript/base
+  - plugin:import/recommended
+  - plugin:import/typescript
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+  - prettier
+  - prettier/@typescript-eslint
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2020
+  project: ./tsconfig.json
+root: true
+rules:
+  '@typescript-eslint/explicit-module-boundary-types': 'off'
+  import/extensions:
+    - error
+    - ignorePackages
+    - js: never
+      jsx: never
+      ts: never
+      tsx: never
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - '**/config-overrides.{j,t}s'
+        - '**/setupTests.{j,t}s'
+        - '**/*.config.{j,t}s'
+        - '**/*.{spec,test}.{j,t}{s,sx}'
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+      path:
+        - ./src
