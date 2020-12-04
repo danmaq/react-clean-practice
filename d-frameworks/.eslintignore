@@ -1,0 +1,7 @@
+/build
+/public
+*.css
+*.json
+*.md
+*.svg
+*.yml
