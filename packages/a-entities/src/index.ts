@@ -1,1 +1,2 @@
-export default undefined;
+export * as entities from './entities';
+export * as repositories from './repositories';
