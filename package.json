@@ -5,9 +5,6 @@
   "description": "Practice for React with Unstated-next x Clean Architecture x Monorepo",
   "author": "danmaq",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "bugs": {
     "url": "https://github.com/danmaq/react-clean-practice/issues"
   },
@@ -16,10 +13,10 @@
     "url": "git+https://github.com/danmaq/react-clean-practice.git"
   },
   "scripts": {
-    "as:adapters": "npm --prefix c-adapters run",
-    "as:entities": "npm --prefix a-entities run",
-    "as:frameworks": "npm --prefix d-frameworks run",
-    "as:usecases": "npm --prefix b-usecases run",
+    "as:adapters": "npm --prefix packages/c-adapters run",
+    "as:entities": "npm --prefix packages/a-entities run",
+    "as:frameworks": "npm --prefix packages/d-frameworks run",
+    "as:usecases": "npm --prefix packages/b-usecases run",
     "build": "npm run as:frameworks -- build",
     "eject": "npm run as:frameworks -- eject",
     "lint": "run-s --continue-on-error \"as:* -- lint\"",
@@ -28,10 +25,7 @@
     "test": "npm run as:frameworks -- test"
   },
   "workspaces": [
-    "a-entities",
-    "b-usecases",
-    "c-adapters",
-    "d-frameworks"
+    "packages/*"
   ],
   "engines": {
     "node": ">=15.3",

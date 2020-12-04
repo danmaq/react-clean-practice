@@ -7,6 +7,6 @@
       "esnext"
     ],
   },
-  "extends": "../tsconfig",
+  "extends": "../../tsconfig",
   "include": ["src"]
 }
