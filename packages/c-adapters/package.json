@@ -5,9 +5,6 @@
   "description": "Practice for React with Unstated-next x Clean Architecture x Monorepo",
   "author": "danmaq",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "bugs": {
     "url": "https://github.com/danmaq/react-clean-practice/issues"
   },
@@ -22,7 +19,10 @@
     "node": ">=15.3",
     "npm": ">=7.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@react-clean-practice/a-entities": "^0.1.0",
+    "@react-clean-practice/b-usecases": "^0.1.0"
+  },
   "devDependencies": {
     "eslint": "^7.14.0",
     "prettier": "^2.2.1",
