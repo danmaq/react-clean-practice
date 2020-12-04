@@ -16,7 +16,10 @@
     "url": "git+https://github.com/danmaq/react-clean-practice.git"
   },
   "scripts": {
+    "as:adapters": "npm --prefix c-adapters run",
+    "as:entities": "npm --prefix a-entities run",
     "as:frameworks": "npm --prefix d-frameworks run",
+    "as:usecases": "npm --prefix b-usecases run",
     "build": "npm run as:frameworks -- build",
     "eject": "npm run as:frameworks -- eject",
     "lint": "run-s --continue-on-error \"as:* -- lint\"",
@@ -25,6 +28,9 @@
     "test": "npm run as:frameworks -- test"
   },
   "workspaces": [
+    "a-entities",
+    "b-usecases",
+    "c-adapters",
     "d-frameworks"
   ],
   "engines": {
